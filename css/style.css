@@ -1,0 +1,166 @@
+/* =========================== Divs =============================*/ 
+
+section {
+  margin-top: 0;
+  padding-top: 20 ;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+  justify-content: center;
+}
+
+.container {
+}
+
+.Titulo {
+  font-size: 15px;
+  padding-left: 2%;
+  padding-right: 5%;
+}
+
+.Legenda {
+  font-size: 12px;
+  padding-left: 2%;
+  padding-right: 5%;
+}
+
+.Texto {
+  padding-left: 2%;
+  padding-right: 5%;
+}
+
+p {
+  text-align: justify;
+  max-width: 600px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 21px; 
+}
+
+#habilidades {
+  padding: 20px;
+}
+
+#Estudos {
+  color: #DDD;
+  background-color: #204060;
+}
+
+#skill {
+  color: #DDD;
+  background-color: #204060;
+}
+
+/* =========================== Generals =============================*/ 
+a {
+  color: darkorange;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+footer {
+  text-align: right;
+}
+
+
+/* =========================== Header and Nav =============================*/ 
+header {
+  background: #565a5d;
+  margin-top: 50px;
+  padding-top:140px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+header h3 {
+  display: inline-flex;
+}
+
+header h4 {
+  padding-top: 20px;
+}
+
+header a {
+  font-size: 25px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  overflow: visible;
+  background: #111;
+  line-height: 0;
+  text-align: center;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav ul {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul > li {
+  display: block;
+    float: left;
+    padding: 0;
+}
+
+.nav ul a {
+  display: block;
+  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 18px 20px 18px 20px;
+  border-left: 1px solid #222;
+}
+
+.nav ul a:hover {
+  background: #222;
+  text-decoration: none;
+  border-left: 1px solid #111;
+}
+
+
+.nav ul .active a:hover {
+  background: #44bbaa;
+}
+
+.nav i {
+  font-size: 25px;
+}
