@@ -315,9 +315,6 @@ footer li {
   border-radius: 50%;
 }
 
-.speaker span {
-  margin: auto;
-}
 
 .speaker :hover {
   background-color: rgba(50,50,50,0.5);

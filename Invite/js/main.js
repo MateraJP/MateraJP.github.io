@@ -46,10 +46,10 @@ $(document).ready(function () {
   $(document).on('click touchend', '.speaker', function() {
     /* Touchend is necessary for mobile devices, click alone won't work */
     if (!$('.speaker').hasClass("speakerplay")) {
-      $('.speaker').removeClass("fa-volume-off");
-      $('.speaker').addClass("fa-volume-up");
       if (audiostatus == 'off') {
         $('.speaker').addClass('speakerplay');
+        $('.speaker').removeClass("fa-volume-off");
+        $('.speaker').addClass("fa-volume-up");
         getaudio.load();
         getaudio.play();
         window.clearTimeout(mouseovertimer);
@@ -57,12 +57,14 @@ $(document).ready(function () {
         return false;
       } else if (audiostatus == 'on') {
         $('.speaker').addClass('speakerplay');
+        $('.speaker').removeClass("fa-volume-off");
+        $('.speaker').addClass("fa-volume-up");
         getaudio.play()
       }
     } else if ($('.speaker').hasClass("speakerplay")) {
+      getaudio.pause();
       $('.speaker').removeClass("fa-volume-up");
       $('.speaker').addClass("fa-volume-off");
-      getaudio.pause();
       $('.speaker').removeClass('speakerplay');
       window.clearTimeout(mouseovertimer);
       audiostatus = 'on';
