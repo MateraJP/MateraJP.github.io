@@ -305,3 +305,20 @@ footer a {
 footer li {
   margin: auto;
 }
+
+.speaker {
+  background-color: rgba(0,0,0,0.5);
+  background-size: 20px;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.speaker span {
+  margin: auto;
+}
+
+.speaker :hover {
+  background-color: rgba(50,50,50,0.5);
+}
